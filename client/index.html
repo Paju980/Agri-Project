@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+      }
+      .wrapper {
+        display: flex;
+        height: 100%;
+        background-color: rgb(23, 0, 108);
+      }
+      form {
+        margin: auto;
+        background-color: rgb(246, 255, 0);
+        padding: 20px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        border-radius: 10px;
+      }
+      input[type="submit"] {
+        font-weight: bold;
+        color: white;
+        background-color: black;
+        padding: 10px;
+      }
+    </style>
+    <div class="wrapper">
+      <form action="http://localhost:3000/login" method="post">
+        <h3>Login</h3>
+
+        <label for="fname">Enter Email</label>
+        <input type="text" id="fname" name="email" /><br /><br />
+
+        <label for="lname">Password</label>
+        <input type="text" id="lname" name="password" /><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
